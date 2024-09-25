@@ -1,0 +1,273 @@
+print(" ")
+print("Ruvalcaba Valverde Miguel Angel")
+print("-----------Ingresar Numeros-----------")
+
+from os import system
+CO = ["Rocket","Spin","Chop","Spring","Bomb","Smoke","Spike",]
+PCO = ("Flame","Falcon","Ice","Sand","Dark","Diamond")
+RA = ["Light","Rubber","Barrier","Ghost","Magma"]
+LE = ["Quake","Buddha","Love","Soung","Spider","Phoenix","Portal","Rumble","Pain","Blizzard",]
+MY = ["Gravity","Mammoth","T-Rex","Dough","Shadow","Venom","Control","Spirit","Dragon","Leopard","Kitzune",]
+NUM = [7,31,56,63,77,101]
+NUM1 = [1,2,3,4,5]
+print("1.Comun 2.Poco comun 3.Raras")
+print("4.Legendaria 5.Myticas 6.Numeros")
+A = int(input('ELIGE UNA Raresa de furuta o una lista de numeros: '))
+print("--------------------------------------------------------")
+match A:
+    case 1:
+        print("Frutas comunes:",CO)
+        print(type(CO))
+        print("Las mejores son la",CO[0],"y",CO[4])
+    case 2:
+        print("Frutas poco comunes:",PCO)
+        print(type(PCO))
+        print("Las mejores son la",PCO[2],"y",PCO[4])
+    case 3:
+        print("Frutas raras:",RA)
+        print(type(RA))
+        print("Las mejores son la",RA[0],"y",RA[4])
+    case 4:
+        print("Frutas legendaryas:",LE)
+        print(type(LE))
+        print("Las mejores para mi son",LE[1],"y",LE[6],"aqui es mas difisil")
+    case 5:
+        print("Frutas myticas:",MY)
+        print(type(MY))
+        print("La mejor es la",MY[10],"Por ahora, esperen a la",MY[8],"Rework")
+    case 6:
+        print("Lista de numeros:",NUM)
+        print(type(NUM))
+    case _:
+        print("ERROR")
+KOK = int(input('cualquier dijito NUMERICO pasar de pagina: '))
+system("cls")
+print("------------------------------------------------------")
+print("Recuerden que siempre se inisia por 0")
+print(NUM1[0])
+print(NUM1[1])
+print(NUM1[2])
+print(NUM1[3])
+print(NUM1[4])
+KOK = int(input('cualquier dijito NUMERICO pasar de pagina: '))
+system("cls")
+print("------------------Aseso a Items------------------------")
+thislist = ["apple", "banana", "cherry"]
+print(thislist[-1])
+print(thislist[-2])
+print(thislist[-3])
+print(thislist[-0])
+print(thislist[0])
+print(thislist[1])
+print(thislist[2])
+#la escala negatiba esta invertida
+print("---")
+#No hay 3 porque se empiesa desde el 0 y no hay -4 porque falta un valor mas
+print(MY[:4])
+print(MY[:2])
+print(MY[:7])
+#esto sirve para cortar la lista-este es para que se corte en un punto
+print("---")
+print(MY[7:])
+print(MY[3:])
+print(MY[9:])
+#igual pero alrebes-este es para inisiar desde un punto
+print("---")
+print(MY[5:3])#no lo toma en cuenta yo esperaba que hisera un bucle o algo hasi
+print(MY[3:10])
+print(MY[0:11])#a cari esta no me la sabia, pero porque?
+print(MY[-3:11])#mmm okey
+#esto te dise desde donde ba a empesar la lista y donde ba a terminar
+print("---")
+if "T-Rex" in MY:
+    print("Tiene buenos combos la T-Rex")
+if "T-Rex" in PCO:
+    print("Tiene buenos combos la T-Rex")#No sale porque la T-Rex no esta en la lista de poco comunes
+if 2 in PCO:
+    print("2 MILLONES-BIG SHOT")#Iugal porque no hay numeros en la lista de poco comunes
+if 31 in NUM:
+    print("Feliz Halloween y felis cumpleaños")
+#con esto se pueden haser comprobasiones para ver si en la lista hay siertos items o objetos como yo les digo.
+#mmm, se me ocuren unas cuantas ideas.
+KOK = int(input('cualquier dijito NUMERICO pasar de pagina: '))
+system("cls")
+print("-------------------Cambiar items--------------------")
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango","Tomato","Aguacate","Lemon"]
+print(thislist)
+thislist[1] = "blackcurrant"
+print(thislist)
+#con esto puedes cambiar objetos de las listas
+print("---")
+thislist[1:3] = ["cherry blue", "watermelon"]
+print(thislist)#se podria desri que se come la opcion 1 a la 3
+print("+1--")#esto es una separasion de hoja
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango","Tomato","Aguacate","Lemon"]
+thislist[1:2] = ["cherry blue", "watermelon"]
+print(thislist)
+thislist[1:9] = ["cherry Red", "Chili"]
+print(thislist)
+thislist[0:11] = ["Fresa"]#hasepta el 11 aunque la pcion no exite
+print(thislist)
+"""
+thislist = ["apple", "banana", "cherry"]
+thislist[4] = ["Fresa"]
+print(thislist)
+-No puedes añadir valores solo cambiarlos
+"""
+#como digo se come las opciones marcadas de esa manera, y las replasa por los items nuevos
+print("+2--")
+thislist = ["apple", "banana", "cherry"]
+thislist.insert(2, "watermelon")
+print(thislist) 
+#que paso qui, con esto directa mente se añade un elemento a la lista si nesidad de elimiar elementos
+KOK = int(input('cualquier dijito NUMERICO pasar de pagina: '))
+system("cls")
+print("--------------Añadir items-----------------")
+thislist = ["apple", "banana", "cherry"]
+thislist.append("orange")
+print(thislist)
+#con esto se puede añadir items a la lista pero siempre al final.
+thislist.insert(1, "Lemon")
+print(thislist)
+#con esto puedes añadir items en lugares espesificos pero desplasaran los items cabiahndo la posison de todos.
+tropical = ["mango", "pineapple", "papaya"]
+thislist.extend(tropical)
+print(thislist)
+#con esto puede fusionar listas, pero los objetis seran parte de la lista que se puso al inisio
+KOK = int(input('cualquier dijito NUMERICO pasar de pagina: '))
+system("cls")
+print("--------Eliminar elementos de liste---------")
+thislist = ["apple", "banana", "cherry"]
+thislist.remove("banana")#con remove, se tiene que escribir el item a eliminar, tanto letras como numeros
+print(thislist)
+#con esto puedes borrar elementos espesificos escritos
+thislist = ["apple", "banana", "cherry"]
+thislist.pop(1)#con este se eliminan items con la posisio de los items en la lista
+#ablando de pop, no me gusta la musica kei pop, se me haser rarra, pero el pop de Michel Jackson
+print(thislist)
+thislist.pop()#si solo pones pop, solo se eliminara el ultimo item
+print(thislist)
+thislist = ["apple", "banana", "cherry"]
+del thislist[0]
+print(thislist)
+#con esto tambien puedes eliminar lementos espesificos de la lista usando del y luego el nombre de la lista, por con [] es para la posicion
+del thislist
+#al haser esto puedes borrar toda la lista y ya no se puede mostrar
+list = ["apple", "banana", "cherry"]
+list.clear()
+print(list)
+#bueno con esto terminar de borar los items de la lista no la lista.
+KOK = int(input('cualquier dijito NUMERICO pasar de pagina: '))
+system("cls")
+print("-----------Lista en bulce-------------")
+thislist = ["apple", "banana", "cherry"," "]
+for x in thislist:
+  print(x)
+#con esto muestra los items de la lista 1 por 1
+for i in range(len(thislist)):
+  print(thislist[i])
+#es lo mismo pero usando el numero de indise, mas diria que es mas complejo
+i = 0
+while i < len(thislist):
+  print(thislist[i])
+  i = i + 1
+#lo mismo pero con while y mas complejo
+[print(x) for x in thislist]
+#Lo mismo pero esto no es tan complejo
+KOK = int(input('cualquier dijito NUMERICO pasar de pagina: '))
+system("cls")
+print("-------------Compresion de listas-------------")
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = [x for x in fruits if x != "apple"]
+print(newlist)
+#asepta todos los elementos de la lista que no sea apple
+newlist = [x for x in fruits]
+print(newlist)
+#sin el if esta no se pueden usar condisiones
+newlist = [x for x in range(10)]
+print(newlist)
+#con esto puedes haser una lista, nueva en este caso de numeros
+newlist = [x for x in range(10) if x < 5]
+print(newlist)
+#con esto solo se aseptan numeros inferiores a 5
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = [x.upper() for x in fruits]
+print(newlist)
+#con esta hases una nueva lista usando la primera como base pero en mallusculas
+newlist = [x if x != "banana" else "orange" for x in fruits]
+print(newlist)
+#qui cambia items
+KOK = int(input('cualquier dijito NUMERICO pasar de pagina: '))
+system("cls")
+print("----------Ordenar listas--------------")
+num = [100,77,31,7,0,-3,0.05,0.6,-0,-0.54]
+abc = ["R","B","A","e", "a", "r", "z", "q", "w", "r", "t", "y", "u" ,"i", "o", "p", "s", "d", "f", "g", "h", "j", "k", "l", "ñ", "x", "c", "v", "b", "n", "m"]
+abc.sort()
+print(abc)
+#aqui ordena las letras de manera alfabetica, Nota: la ñ la toma como algo al final y sobrepone las mallusculas
+num.sort()
+print(num)
+#igual pero con numeros, pero respeta tambie nengativos y puntos
+num.sort(reverse = True)
+print(num)
+abc.sort(reverse = True)
+print(abc)
+#tambien las ordena pero en orden invertido
+def myfunc(n):
+  return abs(n - 50)
+thislist = [100, 50, 65, 82, 23]
+thislist.sort(key = myfunc)
+print(thislist)
+#Muy complejo pero haser que inise por un numero sercano
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.sort(key = str.lower)
+print(thislist)
+#con esto ordena la lista sin contar mayusculas y minusculas
+thislist.reverse()
+print(thislist)
+#igual pero invertido
+KOK = int(input('cualquier dijito NUMERICO pasar de pagina: '))
+system("cls")
+print("----------Copiar listas------------")
+thislist = ["apple", "banana", "cherry"]
+lista = thislist.copy()
+print(lista)
+#con esto puedes copiar listas
+mylist = thislist[:]
+print(mylist)
+#lo mismo pero mas comprimido
+KOK = int(input('cualquier dijito NUMERICO pasar de pagina: '))
+system("cls")
+print("----------Unir listas listas---------")
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+list3 = list1 + list2
+print(list3)
+#aqui se sumans 2 listas para haser otra
+for x in list2:
+  list1.append(x)
+print(list1)
+#aqui se integra una lista a la otra sin nesidad de crear una nueva
+list1.extend(list2)
+print(list1)
+#esto ya se bio anterior mente pero se repite ya que se integro una lista a la otra de manera mas fasil
+KOK = int(input('cualquier dijito NUMERICO pasar de pagina: '))
+system("cls")
+print("----------repasas palabras finales--------------")
+print("Comando--Descrision")
+print("append()--Alladir items al final de la lista.")
+print("clear()--Borrar todos los items de la lista.")
+print("copy()--Copiar una lista en otra o una nueva.")
+print("count()--Devuelve el número de item con el valor especificado")
+print("extend()--Agrega los item de una lista (o cualquier iterable), al final de la lista actual")#como una append pero mejor
+print("index()--Devuelve el índice del primer item con el valor especificado")
+print("insert()--Allade un item en la posición especificada")
+print("pop()--Borrar el item en la posición especificada")
+print("remove()--Borrar el item con el valor especificado")
+print("reverse()--Invierte el orden de la lista.")
+print("sort()--Ordena la lista")
+KOK = int(input('cualquier dijito NUMERICO pasar de pagina: '))
+system("cls")
+print("--------------------------------------")
+print("Resultado: se logro entender el punto")
+print(" ")
